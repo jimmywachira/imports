@@ -3,11 +3,11 @@
 @section('content')
 <div class="page-shell">
     {{-- Hero Section --}}
-    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+    <div class="max-w-7xl mx-auto px-3 sm:px-3 lg:px-4 py-4 sm:py-6 lg:py-8">
         <div class="text-center mb-8 sm:mb-12 lg:mb-16">
             <p class="uppercase tracking-[0.2em] text-xs font-semibold text-amber-400 mb-2 sm:mb-4">What Our Clients Say</p>
             <h1 class="text-2xl sm:text-4xl lg:text-6xl font-extrabold mb-3 sm:mb-4 leading-tight">Hear from Satisfied Xplore Car Imports Clients</h1>
-            <p class="text-base sm:text-lg lg:text-xl ui-muted max-w-3xl mx-auto px-3 sm:px-0">Join thousands of Kenyans who have successfully imported quality vehicles with confidence and ease through Xplore Car Imports.</p>
+            <p class="text-base sm:text-lg lg:text-xl ui-muted max-w-3xl mx-auto px-3 sm:px-0">Join Successful Kenyans who have imported quality vehicles with confidence and ease through Xplore Car Imports.</p>
         </div>
     </div>
 
@@ -26,16 +26,16 @@
                 <div class="aspect-video w-full overflow-hidden">
                     <iframe 
                         class="w-full h-full"
-                        src="https://www.youtube.com/embed/feO-u_WJjog" 
-                        title="Client Testimonial 2 - Amelia's Success Story"
+                        src="https://www.youtube.com/embed/8APihMmKJb4?start=5" 
+                        title="Client Testimonial 1"
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen
                         loading="lazy"
                     ></iframe>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
-                    <p class="text-white font-semibold">Amelia's Success Story</p>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end pointer-events-none">
+                    <p class="text-white font-semibold">happy Client success story</p>
                     <p class="text-slate-200 text-sm">Private Vehicle Owner</p>
                 </div>
             </div>
@@ -45,16 +45,16 @@
                 <div class="aspect-video w-full overflow-hidden">
                     <iframe 
                         class="w-full h-full"
-                        src="https://www.youtube.com/embed/feO-u_WJjog" 
-                        title="Client Testimonial 2 - Amelia's Success Story"
+                        src="https://www.youtube.com/embed/ztZaKMBXPTI" 
+                        title="Client Testimonial 2"
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen
                         loading="lazy"
                     ></iframe>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
-                    <p class="text-white font-semibold">Amelia's Success Story</p>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end pointer-events-none">
+                    <p class="text-white font-semibold">happy Client success story</p>
                     <p class="text-slate-200 text-sm">Private Vehicle Owner</p>
                 </div>
             </div>
@@ -64,16 +64,16 @@
                 <div class="aspect-video w-full overflow-hidden">
                     <iframe 
                         class="w-full h-full"
-                        src="https://www.youtube.com/embed/feO-u_WJjog" 
-                        title="Client Testimonial 2 - Amelia's Success Story"
+                        src="https://www.youtube.com/embed/Rk-3GiidTZY" 
+                        title="Client Testimonial 2 - happy Client success story"
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen
                         loading="lazy"
                     ></iframe>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
-                    <p class="text-white font-semibold">Amelia's Success Story</p>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end pointer-events-none">
+                    <p class="text-white font-semibold">happy Client success story</p>
                     <p class="text-slate-200 text-sm">Private Vehicle Owner</p>
                 </div>
             </div>
@@ -83,16 +83,16 @@
                 <div class="aspect-video w-full overflow-hidden">
                     <iframe 
                         class="w-full h-full"
-                        src="https://www.youtube.com/embed/feO-u_WJjog" 
-                        title="Client Testimonial 2 - Amelia's Success Story"
+                        src="https://www.youtube.com/embed/t2E0UnaAsMA?start=36" 
+                        title="Client Testimonial 4"
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen
                         loading="lazy"
                     ></iframe>
                 </div>
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
-                    <p class="text-white font-semibold">Amelia's Success Story</p>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end pointer-events-none">
+                    <p class="text-white font-semibold">happy Client success story</p>
                     <p class="text-slate-200 text-sm">Private Vehicle Owner</p>
                 </div>
             </div>
@@ -100,7 +100,7 @@
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
             <div class="glass-panel p-4 sm:p-6 text-center">
-                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-amber-400 mb-1 sm:mb-2">500+</p>
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-amber-400 mb-1 sm:mb-2">10+</p>
                 <p class="ui-muted text-xs sm:text-sm">Happy Customers</p>
             </div>
             <div class="glass-panel p-4 sm:p-6 text-center">
@@ -108,7 +108,7 @@
                 <p class="ui-muted text-xs sm:text-sm">Average Rating</p>
             </div>
             <div class="glass-panel p-4 sm:p-6 text-center">
-                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-amber-400 mb-1 sm:mb-2">1000+</p>
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-bold text-amber-400 mb-1 sm:mb-2">10+</p>
                 <p class="ui-muted text-xs sm:text-sm">Vehicles Imported</p>
             </div>
             <div class="glass-panel p-4 sm:p-6 text-center">
@@ -126,7 +126,7 @@
             <div class="glass-panel p-6 sm:p-8 hover:shadow-lg transition-shadow">
                 <div class="flex items-start justify-between mb-4">
                     <div>
-                        <h3 class="text-lg font-semibold">David Kipchoge</h3>
+                        <h3 class="text-lg font-semibold">David K***</h3>
                         <p class="text-sm ui-muted">Taxi Business Owner</p>
                     </div>
                     <div class="flex gap-1">
@@ -144,7 +144,7 @@
             <div class="glass-panel p-6 sm:p-8 hover:shadow-lg transition-shadow">
                 <div class="flex items-start justify-between mb-4">
                     <div>
-                        <h3 class="text-lg font-semibold">Amelia Cheruiyot</h3>
+                        <h3 class="text-lg font-semibold">Amelia ***</h3>
                         <p class="text-sm ui-muted">Private Vehicle Owner</p>
                     </div>
                     <div class="flex gap-1">
@@ -162,7 +162,7 @@
             <div class="glass-panel p-6 sm:p-8 hover:shadow-lg transition-shadow">
                 <div class="flex items-start justify-between mb-4">
                     <div>
-                        <h3 class="text-lg font-semibold">Samuel Kipchoge</h3>
+                        <h3 class="text-lg font-semibold">Samuel K***</h3>
                         <p class="text-sm ui-muted">Commercial Investor</p>
                     </div>
                     <div class="flex gap-1">
@@ -180,7 +180,7 @@
             <div class="glass-panel p-6 sm:p-8 hover:shadow-lg transition-shadow">
                 <div class="flex items-start justify-between mb-4">
                     <div>
-                        <h3 class="text-lg font-semibold">Catherine Wanjiru</h3>
+                        <h3 class="text-lg font-semibold">Njoro ***</h3>
                         <p class="text-sm ui-muted">Family Business Owner</p>
                     </div>
                     <div class="flex gap-1">
@@ -198,7 +198,7 @@
             <div class="glass-panel p-6 sm:p-8 hover:shadow-lg transition-shadow">
                 <div class="flex items-start justify-between mb-4">
                     <div>
-                        <h3 class="text-lg font-semibold">James Muturi</h3>
+                        <h3 class="text-lg font-semibold">Grace K***</h3>
                         <p class="text-sm ui-muted">Transport Business Owner</p>
                     </div>
                     <div class="flex gap-1">
@@ -216,7 +216,7 @@
             <div class="glass-panel p-6 sm:p-8 hover:shadow-lg transition-shadow">
                 <div class="flex items-start justify-between mb-4">
                     <div>
-                        <h3 class="text-lg font-semibold">Rebecca Okoth</h3>
+                        <h3 class="text-lg font-semibold">Joseph W***</h3>
                         <p class="text-sm ui-muted">Executive Professional</p>
                     </div>
                     <div class="flex gap-1">

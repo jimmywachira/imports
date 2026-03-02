@@ -42,11 +42,11 @@
 
             {{-- CTA Buttons --}}
             <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <a href="{{ route('cars') }}" class="btn-primary btn-lg hover:shadow-xl hover:shadow-amber-400/30 transition-all transform hover:scale-105">
+                <a href="{{ route('cars') }}" class="bg-amber-500 hover:bg-amber-600 text-white hover:shadow-xl hover:shadow-amber-400/30 transition-all transform hover:scale-105 px-6 py-3 rounded-lg flex items-center justify-center gap-2">
                     <ion-icon name="car-outline" class="text-lg"></ion-icon>
                     Browse Our Vehicles
                 </a>
-                <a href="{{ route('contact') }}" class="btn btn-outline btn-lg border-white/40 text-white hover:bg-white/10 transition-all transform hover:scale-105 backdrop-blur-sm">
+                <a href="{{ route('contact') }}" class="bg-amber-400 hover:bg-amber-500 px-6 py-3  border-white/40 text-white transition-all transform hover:scale-105 backdrop-blur-sm">
                     <ion-icon name="call-outline" class="text-lg"></ion-icon>
                     Get in Touch
                 </a>
