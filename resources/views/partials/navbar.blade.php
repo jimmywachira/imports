@@ -1,7 +1,7 @@
 <!-- Top Contact Bar -->
-<div class="w-full  text-amber-400">
+<div class="w-full  text-green-400">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 text-xs sm:text-sm">
+        <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 sm:text-sm">
             <!-- Phone -->
             <a href="tel:+254757356989" class="flex items-center gap-2 hover:text-slate-100 transition-colors group">
                 <ion-icon name="call-outline" class="text-base group-hover:scale-110 transition-transform"></ion-icon>
@@ -30,44 +30,44 @@
 
             <!-- Desktop Navigation Links -->
             <div class="hidden md:flex items-center gap-4 lg:gap-6">
-                <a href="{{ route('cars') }}" class="text-xs sm:text-sm lg:text-base {{ request()->routeIs('cars') ? 'text-amber-400 font-bold' : 'text-slate-700 dark:text-slate-300' }} hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
+                <a href="{{ route('cars') }}" class="px-4 py-2 sm:text-sm lg:text-base {{ request()->routeIs('cars') ? 'bg-green-400 font-bold' : ' dark:text-slate-300' }} hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
                     Browse Cars
                 </a>
-                <a href="{{ route('about') }}" class="text-xs sm:text-sm lg:text-base {{ request()->routeIs('about') ? 'text-amber-400 font-bold' : 'text-slate-700 dark:text-slate-300' }} hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
+                <a href="{{ route('about') }}" class=" px-4 py-2  sm:text-sm lg:text-base {{ request()->routeIs('about') ? 'bg-green-400 font-bold' : ' dark:text-slate-300' }} hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
                     About
                 </a>
-                <a href="{{ route('testimonials') }}" class="text-xs sm:text-sm lg:text-base {{ request()->routeIs('testimonials') ? 'text-amber-400 font-bold' : 'text-slate-700 dark:text-slate-300' }} hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
+                <a href="{{ route('testimonials') }}" class=" px-4 py-2  sm:text-sm lg:text-base {{ request()->routeIs('testimonials') ? 'bg-green-400 font-bold' : ' dark:text-slate-300' }} hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
                     Testimonials
                 </a>
-                <a href="{{ route('contact') }}" class="text-xs sm:text-sm lg:text-base {{ request()->routeIs('contact') ? 'text-amber-400 font-bold' : 'text-slate-700 dark:text-slate-300' }} hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
+                <a href="{{ route('contact') }}" class=" px-4 py-2  sm:text-sm lg:text-base {{ request()->routeIs('contact') ? 'bg-green-400 font-bold' : ' dark:text-slate-300' }} hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
                     Contact
                 </a>
 
                 <button
                     id="theme-toggle"
                     type="button"
-                    class="btn btn-sm btn-ghost text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 h-10 w-10 min-h-10 p-0"
+                    class="btn btn-sm btn-ghost' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 h-10 w-10 min-h-10 p-0"
                     aria-label="Toggle theme"
                 >
                     <ion-icon data-theme-icon name="moon-outline" class="text-lg md:text-xl"></ion-icon>
                 </button> 
 
-                {{-- @guest
+                @guest
                     <!-- Guest Links -->
-                    <a href="{{ route('login') }}" class="text-xs sm:text-sm lg:text-base text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
+                    <a href="{{ route('login') }}" class="sm:text-sm lg:text-base' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 transition-colors">
                         Login
                     </a>
                     <a href="{{ route('register') }}" class="btn-primary btn-sm h-10 min-h-10 p-2">
                         Register
                     </a>
-                @endguest --}}
+                @endguest
             </div>
 
             <!-- Mobile Menu Button -->
             <div class="md:hidden flex-shrink-0">
                 <button 
                     id="mobile-menu-btn" 
-                    class="text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 transition-colors p-2 h-10 w-10 min-h-10 flex items-center justify-center"
+                    class=' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 transition-colors p-2 h-10 w-10 min-h-10 flex items-center justify-center"
                     aria-label="Toggle menu"
                     aria-expanded="false"
                 >
@@ -81,46 +81,46 @@
             <button
                 id="theme-toggle-mobile"
                 type="button"
-                class="w-full text-left py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm"
+                class="w-full text-left py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm"
                 aria-label="Toggle theme"
             >
                 <ion-icon data-theme-icon name="moon-outline" class="align-middle mr-2"></ion-icon>
                 Toggle Theme
             </button>
-            {{-- <a href="{{ route('cars') }}" class="block py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
+            <a href="{{ route('cars') }}" class="block py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
                 Browse Cars
-            </a> --}}
-            <a href="{{ route('about') }}" class="block py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
+            </a>
+            <a href="{{ route('about') }}" class="block py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
                 About
             </a>
-            <a href="{{ route('testimonials') }}" class="block py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
+            <a href="{{ route('testimonials') }}" class="block py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
                 Testimonials
             </a>
-            <a href="{{ route('contact') }}" class="block py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
+            <a href="{{ route('contact') }}" class="block py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
                 Contact
             </a>
 
             @auth
                 <!-- Admin Links Mobile -->
-                <div class="border-t border-slate-200/60 dark:border-white/10 mt-3 pt-3">
-                    <div class="px-4 py-2 text-slate-500 dark:text-slate-400 text-xs font-semibold">
+                <div class=" mt-3 pt-3">
+                    <div class="px-4 py-2 text-slate-500 dark:text-slate-400 font-bold">
                         {{ Auth::user()->name }}
                     </div>
-                    <a href="{{ route('admin.dashboard') }}" class="block py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
+                    <a href="{{ route('admin.dashboard') }}" class="block py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black dark:hover:bg-white/5 transition-colors rounded text-sm">
                         <ion-icon name="speedometer-outline" class="align-middle mr-2"></ion-icon>
                         Dashboard
                     </a>
-                    <a href="{{ route('admin.vehicles.index') }}" class="block py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
-                        <icon-icon name="car-outline" class="align-middle mr-2"></icon-icon>
+                    <a href="{{ route('admin.vehicles.index') }}" class="block py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black dark:hover:bg-white/5 transition-colors rounded text-sm">
+                        <ion-icon name="car-outline" class="align-middle mr-2"></ion-icon>
                         Manage Vehicles
                     </a>
-                    <a href="{{ route('profile.edit') }}" class="block py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
+                    <a href="{{ route('profile.edit') }}" class="block py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black dark:hover:bg-white/5 transition-colors rounded text-sm">
                         <ion-icon name="settings-outline" class="align-middle mr-2"></ion-icon>
                         Settings
                     </a>
                     <form method="POST" action="{{ route('logout') }}">
                         @csrf
-                        <button type="submit" class="block w-full text-left py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-red-500 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
+                        <button type="submit" class="block w-full text-left py-3 px-4' dark:text-slate-300 hover:text-red-500 hover:bg-black/5 dark:hover:bg-white transition-colors rounded text-sm">
                             <ion-icon name="log-out-outline" class="align-middle mr-2"></ion-icon>
                             Logout
                         </button>
@@ -130,7 +130,7 @@
             @guest
                 <!-- Guest Links Mobile -->
                 <div class="border-t border-slate-200/60 dark:border-white/10 mt-3 pt-3">
-                    <a href="{{ route('login') }}" class="block py-3 px-4 text-slate-700 dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
+                    <a href="{{ route('login') }}" class="block py-3 px-4' dark:text-slate-300 hover:text-slate-500 dark:hover:text-slate-400 hover:bg-black/5 dark:hover:bg-white/5 transition-colors rounded text-sm">
                         <ion-icon name="log-in-outline" class="align-middle mr-2"></ion-icon>
                         Login
                     </a>
@@ -142,7 +142,6 @@
             @endguest
         </div>
     </div>
-
 
         <!-- Admin Navigation -->
         @auth

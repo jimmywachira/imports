@@ -56,7 +56,7 @@ class VehicleEdit extends Component
     #[Validate('array|max:5')]
     public $images = [];
 
-    #[Validate('image|max:5120')] // 5MB max per image
+    #[Validate('nullable|image|max:5120')] // optional, 5MB max per image
     public $newImage = null;
 
     public function mount($id)
@@ -80,12 +80,19 @@ class VehicleEdit extends Component
 
     public function addImage()
     {
+        if (count($this->images) >= 5) {
+            $this->addError('images', 'You can only upload up to 5 images.');
+            return;
+        }
+
         $this->validate(['newImage' => 'required|image|max:5120']);
         
         if ($this->newImage) {
+            // Store the file and save the path (not the full URL)
             $path = $this->newImage->store('vehicles', 'public');
-            $this->images[] = Storage::url($path);
+            $this->images[] = $path;  // Store just the path, not the full URL
             $this->newImage = null;
+            $this->resetValidation(['newImage', 'images']);
         }
     }
 
@@ -97,7 +104,22 @@ class VehicleEdit extends Component
 
     public function update()
     {
-        $this->validate();
+        $this->validate([
+            'vin_number' => 'required|string',
+            'make' => 'required|string|max:255',
+            'model' => 'required|string|max:255',
+            'year_of_reg' => 'required|integer|min:2019|max:2026',
+            'mileage' => 'required|integer|min:0',
+            'engine_capacity' => 'required|string',
+            'transmission' => 'required|in:Automatic,Manual',
+            'fuel_type' => 'required|in:Petrol,Diesel,Hybrid',
+            'auction_grade' => 'required|string',
+            'cif_price_min' => 'required|numeric|min:0',
+            'cif_price_max' => 'required|numeric|min:0|gte:cif_price_min',
+            'is_available' => 'boolean',
+            'images' => 'array|max:5',
+            'newImage' => 'nullable|image|max:5120',
+        ]);
 
         if ($this->newImage) {
             $this->addImage();

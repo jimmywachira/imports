@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Vehicle extends Model
 {
@@ -87,7 +88,13 @@ class Vehicle extends Model
         }
 
         if (is_array($images) && count($images) > 0 && !empty($images[0])) {
-            return $images[0];
+            $image = $images[0];
+            // Handle old format (absolute/relative URL) and path-only DB values.
+            if (str_starts_with($image, '/') || str_starts_with($image, 'http')) {
+                return $image;
+            }
+
+            return Storage::url($image);
         }
 
         return "https://picsum.photos/800/600?random={$this->id}";

@@ -55,17 +55,27 @@ class VehicleCreate extends Component
     #[Validate('array|max:5')]
     public $images = [];
 
-    #[Validate('image|max:5120')] // 5MB max per image
+    #[Validate('nullable|image|max:5120')] // 5MB max per image
     public $newImage = null;
 
     public function addImage()
     {
+        // Enforce 5 image limit
+        if (count($this->images) >= 5) {
+            session()->flash('error', 'Maximum 5 images allowed per vehicle.');
+            return;
+        }
+
         $this->validate(['newImage' => 'required|image|max:5120']);
         
         if ($this->newImage) {
+            // Store the file and save the path (not the full URL)
             $path = $this->newImage->store('vehicles', 'public');
-            $this->images[] = Storage::url($path);
+            $this->images[] = $path;  // Store just the path, not the full URL
             $this->newImage = null;
+            
+            // Reset validation state for the newImage field
+            $this->resetValidation(['newImage', 'images']);
         }
     }
 
@@ -77,7 +87,23 @@ class VehicleCreate extends Component
 
     public function save()
     {
-        $this->validate();
+        // Validate with explicit rules to ensure newImage is properly handled
+        $this->validate([
+            'vin_number' => 'required|unique:vehicles,vin_number',
+            'make' => 'required|string|max:255',
+            'model' => 'required|string|max:255',
+            'year_of_reg' => 'required|integer|min:2019|max:2026',
+            'mileage' => 'required|integer|min:0',
+            'engine_capacity' => 'required|string',
+            'transmission' => 'required|in:Automatic,Manual',
+            'fuel_type' => 'required|in:Petrol,Diesel,Hybrid',
+            'auction_grade' => 'required|string',
+            'cif_price_min' => 'required|numeric|min:0',
+            'cif_price_max' => 'required|numeric|min:0|gte:cif_price_min',
+            'is_available' => 'boolean',
+            'images' => 'array|max:5',
+            'newImage' => 'nullable|image|max:5120',
+        ]);
 
         if ($this->newImage) {
             $this->addImage();

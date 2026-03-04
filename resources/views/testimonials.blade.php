@@ -11,7 +11,6 @@
         </div>
     </div>
 
-
     {{-- Video Testimonials Section --}}
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div class="text-center mb-8 sm:mb-12">
@@ -22,7 +21,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {{-- Video 1 --}}
-            <div class="group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div class="group relative overflow-hidden bg-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div class="aspect-video w-full overflow-hidden">
                     <iframe 
                         class="w-full h-full"
@@ -41,7 +40,7 @@
             </div>
 
             {{-- Video 2 --}}
-            <div class="group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div class="group relative overflow-hidden bg-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div class="aspect-video w-full overflow-hidden">
                     <iframe 
                         class="w-full h-full"
@@ -60,7 +59,7 @@
             </div>
 
             {{-- Video 3 --}}
-            <div class="group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div class="group relative overflow-hidden bg-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div class="aspect-video w-full overflow-hidden">
                     <iframe 
                         class="w-full h-full"
@@ -79,7 +78,7 @@
             </div>
 
             {{-- Video 4 --}}
-            <div class="group relative overflow-hidden rounded-2xl bg-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div class="group relative overflow-hidden bg-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <div class="aspect-video w-full overflow-hidden">
                     <iframe 
                         class="w-full h-full"
@@ -130,11 +129,11 @@
                         <p class="text-sm ui-muted">Taxi Business Owner</p>
                     </div>
                     <div class="flex gap-1">
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
                     </div>
                 </div>
                 <p class="ui-muted text-sm leading-relaxed">"Xplore Car Imports made the entire process seamless. From selecting the car to clearing it at customs, everything was handled professionally. I saved significantly compared to what I would have spent elsewhere. Highly recommended!"</p>
@@ -148,11 +147,11 @@
                         <p class="text-sm ui-muted">Private Vehicle Owner</p>
                     </div>
                     <div class="flex gap-1">
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
                     </div>
                 </div>
                 <p class="ui-muted text-sm leading-relaxed">"I was skeptical about importing a car from Japan, but the Xplore team answered all my questions and walked me through each step. The car arrived in perfect condition, and I'm absolutely in love with it. Transparent, reliable, and trustworthy!"</p>
@@ -166,11 +165,11 @@
                         <p class="text-sm ui-muted">Commercial Investor</p>
                     </div>
                     <div class="flex gap-1">
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
                     </div>
                 </div>
                 <p class="ui-muted text-sm leading-relaxed">"I imported 3 vehicles for my fleet and had nothing but positive experiences. The team's expertise in navigating customs and regulations is exceptional. They handled everything efficiently and professionally. This is my go-to partner for all car imports."</p>
@@ -184,11 +183,11 @@
                         <p class="text-sm ui-muted">Family Business Owner</p>
                     </div>
                     <div class="flex gap-1">
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
                     </div>
                 </div>
                 <p class="ui-muted text-sm leading-relaxed">"Xplore's customer service is outstanding. They provided honest guidance and helped me choose a vehicle that suited my budget perfectly. The entire process was faster than expected, and my car is running like a dream!"</p>
@@ -202,11 +201,11 @@
                         <p class="text-sm ui-muted">Transport Business Owner</p>
                     </div>
                     <div class="flex gap-1">
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
                     </div>
                 </div>
                 <p class="ui-muted text-sm leading-relaxed">"I've been in the transport business for years, and this is the best experience I've had importing vehicles. Xplore's transparency and attention to detail set them apart. I've already referred several friends to their service!"</p>
@@ -220,11 +219,11 @@
                         <p class="text-sm ui-muted">Executive Professional</p>
                     </div>
                     <div class="flex gap-1">
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
-                        <ion-icon name="star" class="text-amber-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
+                        <ion-icon name="star" class="text-green-400"></ion-icon>
                     </div>
                 </div>
                 <p class="ui-muted text-sm leading-relaxed">"The peace of mind that comes with using Xplore is invaluable. Every step was explained clearly, and I was never left in the dark. My car is fantastic, and I got excellent value for my money. Will definitely use them again!"</p>
@@ -238,9 +237,9 @@
             <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">Ready to Import Your Dream Car?</h2>
             <p class="ui-muted text-base sm:text-lg mb-8 max-w-2xl mx-auto">Join hundreds of satisfied customers who have successfully imported quality vehicles with Xplore Car Imports.</p>
             <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                {{-- <a href="{{ route('cars') }}" class="btn-primary btn-lg">
+                <a href="{{ route('cars') }}" class="btn-primary btn-lg">
                     Browse Vehicles
-                </a> --}}
+                </a>
                 <a href="{{ route('contact') }}" class="btn btn-outline btn-lg">
                     Get in Touch
                 </a>

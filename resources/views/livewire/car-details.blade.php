@@ -3,7 +3,7 @@
         <!-- Breadcrumb -->
         <div class="text-xs sm:text-sm breadcrumbs mb-4 sm:mb-6 overflow-x-auto">
             <ul class="flex gap-2">
-                <li><a href="{{ route('cars') }}" wire:navigate class="text-amber-400 hover:text-amber-300 whitespace-nowrap">Browse Cars</a></li>
+                <li><a href="{{ route('cars') }}" wire:navigate class="text-green-400 hover:text-green-300 whitespace-nowrap">Browse Cars</a></li>
                 <li class="text-slate-600 dark:text-slate-300 whitespace-nowrap">{{ $car->make }}</li>
                 <li class="text-slate-600 dark:text-slate-300 whitespace-nowrap line-clamp-1">{{ $car->full_name }}</li>
             </ul>
@@ -35,9 +35,9 @@
                                 <button 
                                     wire:click="selectImage({{ $index }})"
                                     class="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden border-2 transition-colors
-                                        {{ $selectedImage === $index ? 'border-amber-400' : 'border-slate-700 hover:border-amber-400/50' }}"
+                                        {{ $selectedImage === $index ? 'border-green-400' : 'border-slate-700 hover:border-green-400/50' }}"
                                 >
-                                    <img src="{{ $image }}" alt="View {{ $index + 1 }}" class="w-full h-full object-cover" />
+                                    <img src="{{ str_starts_with($image, '/') || str_starts_with($image, 'http') ? $image : asset('storage/' . $image) }}" alt="View {{ $index + 1 }}" class="w-full h-full object-cover" />
                                 </button>
                             @endforeach
                         </div>
@@ -47,15 +47,15 @@
                 <!-- Vehicle Specifications -->
                 <div class="glass-panel p-4 sm:p-6 lg:p-8">
                     <h2 class="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-2">
-                        <ion-icon name="information-circle-outline" class="text-2xl sm:text-3xl text-amber-400 flex-shrink-0"></ion-icon>
+                        <ion-icon name="information-circle-outline" class="text-2xl sm:text-3xl text-green-400 flex-shrink-0"></ion-icon>
                         <span>Vehicle Specifications</span>
                     </h2>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                         <!-- Spec Item -->
                         <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 bg-amber-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <ion-icon name="car-outline" class="text-lg sm:text-xl text-amber-400"></ion-icon>
+                            <div class="w-10 h-10 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <ion-icon name="car-outline" class="text-lg sm:text-xl text-green-400"></ion-icon>
                             </div>
                             <div class="min-w-0">
                                 <p class="text-slate-500 text-xs sm:text-sm dark:text-slate-400">Make & Model</p>
@@ -64,8 +64,8 @@
                         </div>
 
                         <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 bg-amber-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <ion-icon name="calendar-outline" class="text-lg sm:text-xl text-amber-400"></ion-icon>
+                            <div class="w-10 h-10 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <ion-icon name="calendar-outline" class="text-lg sm:text-xl text-green-400"></ion-icon>
                             </div>
                             <div>
                                 <p class="text-slate-500 text-xs sm:text-sm dark:text-slate-400">Year of Registration</p>
@@ -74,8 +74,8 @@
                         </div>
 
                         <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 bg-amber-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <ion-icon name="speedometer-outline" class="text-lg sm:text-xl text-amber-400"></ion-icon>
+                            <div class="w-10 h-10 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <ion-icon name="speedometer-outline" class="text-lg sm:text-xl text-green-400"></ion-icon>
                             </div>
                             <div>
                                 <p class="text-slate-500 text-xs sm:text-sm dark:text-slate-400">Mileage</p>
@@ -84,8 +84,8 @@
                         </div>
 
                         <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 bg-amber-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <ion-icon name="flash-outline" class="text-lg sm:text-xl text-amber-400"></ion-icon>
+                            <div class="w-10 h-10 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <ion-icon name="flash-outline" class="text-lg sm:text-xl text-green-400"></ion-icon>
                             </div>
                             <div>
                                 <p class="text-slate-500 text-xs sm:text-sm dark:text-slate-400">Engine Capacity</p>
@@ -94,8 +94,8 @@
                         </div>
 
                         <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 bg-amber-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <ion-icon name="settings-outline" class="text-lg sm:text-xl text-amber-400"></ion-icon>
+                            <div class="w-10 h-10 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <ion-icon name="settings-outline" class="text-lg sm:text-xl text-green-400"></ion-icon>
                             </div>
                             <div>
                                 <p class="text-slate-500 text-xs sm:text-sm dark:text-slate-400">Transmission</p>
@@ -104,8 +104,8 @@
                         </div>
 
                         <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 bg-amber-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <ion-icon name="water-outline" class="text-lg sm:text-xl text-amber-400"></ion-icon>
+                            <div class="w-10 h-10 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <ion-icon name="water-outline" class="text-lg sm:text-xl text-green-400"></ion-icon>
                             </div>
                             <div>
                                 <p class="text-slate-500 text-xs sm:text-sm dark:text-slate-400">Fuel Type</p>
@@ -114,8 +114,8 @@
                         </div>
 
                         <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 bg-amber-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <ion-icon name="star-outline" class="text-lg sm:text-xl text-amber-400"></ion-icon>
+                            <div class="w-10 h-10 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <ion-icon name="star-outline" class="text-lg sm:text-xl text-green-400"></ion-icon>
                             </div>
                             <div>
                                 <p class="text-slate-500 text-xs sm:text-sm dark:text-slate-400">Auction Grade</p>
@@ -124,8 +124,8 @@
                         </div>
 
                         <div class="flex items-start gap-3">
-                            <div class="w-10 h-10 bg-amber-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <ion-icon name="barcode-outline" class="text-lg sm:text-xl text-amber-400"></ion-icon>
+                            <div class="w-10 h-10 bg-green-400/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <ion-icon name="barcode-outline" class="text-lg sm:text-xl text-green-400"></ion-icon>
                             </div>
                             <div class="min-w-0">
                                 <p class="text-slate-500 text-xs sm:text-sm dark:text-slate-400">VIN Number</p>
@@ -138,7 +138,7 @@
                 <!-- Additional Information -->
                 <div class="glass-panel p-4 sm:p-6 lg:p-8">
                     <h2 class="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-2">
-                        <ion-icon name="clipboard-outline" class="text-2xl sm:text-3xl text-amber-400 flex-shrink-0"></ion-icon>
+                        <ion-icon name="clipboard-outline" class="text-2xl sm:text-3xl text-green-400 flex-shrink-0"></ion-icon>
                         <span>Import Information</span>
                     </h2>
 
@@ -172,7 +172,7 @@
             <!-- Right Column - Pricing and Contact -->
             <div class="space-y-4 sm:space-y-6">
                 <!-- Price Card -->
-                <div class="rounded-2xl bg-gradient-to-br from-amber-400 to-yellow-300 text-blue-900 p-4 sm:p-6 lg:p-8 shadow-2xl lg:sticky lg:top-4">
+                <div class="rounded-2xl bg-gradient-to-br from-green-400 to-yellow-300 text-blue-900 p-4 sm:p-6 lg:p-8 shadow-2xl lg:sticky lg:top-4">
                     <div class="mb-4 sm:mb-6">
                         <p class="text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2">CIF Price</p>
                         <p class="text-xl sm:text-2xl lg:text-3xl font-extrabold">{{ $car->formatted_price }}</p>
@@ -225,21 +225,21 @@
                     <h3 class="text-base sm:text-lg font-bold mb-3 sm:mb-4">Quick Contact</h3>
                     <div class="space-y-2 sm:space-y-3 text-xs sm:text-sm">
                         <div class="flex items-center gap-3">
-                            <ion-icon name="call-outline" class="text-lg sm:text-xl text-amber-400 flex-shrink-0"></ion-icon>
+                            <ion-icon name="call-outline" class="text-lg sm:text-xl text-green-400 flex-shrink-0"></ion-icon>
                             <div class="min-w-0">
                                 <p class="text-slate-500 dark:text-slate-400 text-xs">Phone</p>
                                 <p class="font-semibold break-all">+254 700 123 456</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3">
-                            <ion-icon name="mail-outline" class="text-lg sm:text-xl text-amber-400 flex-shrink-0"></ion-icon>
+                            <ion-icon name="mail-outline" class="text-lg sm:text-xl text-green-400 flex-shrink-0"></ion-icon>
                             <div class="min-w-0">
                                 <p class="text-slate-500 dark:text-slate-400 text-xs">Email</p>
                                 <p class="font-semibold break-all text-xs sm:text-sm">info@xplorecar.com</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <ion-icon name="time-outline" class="text-lg sm:text-xl text-amber-400 flex-shrink-0 mt-0.5"></ion-icon>
+                            <ion-icon name="time-outline" class="text-lg sm:text-xl text-green-400 flex-shrink-0 mt-0.5"></ion-icon>
                             <div>
                                 <p class="text-slate-500 dark:text-slate-400 text-xs">Available</p>
                                 <p class="font-semibold text-xs sm:text-sm">24/7 Customer Support</p>
@@ -284,7 +284,7 @@
                     <a 
                         href="{{ route('cars') }}" 
                         wire:navigate
-                        class="btn-outline-amber"
+                        class="btn-outline-green"
                     >
                         View All Cars
                     </a>
@@ -319,7 +319,7 @@
                                 </div>
 
                                 <div class="flex items-center justify-between">
-                                    <p class="text-xl font-bold text-amber-300">
+                                    <p class="text-xl font-bold text-green-300">
                                         {{ $similarCar->formatted_price }}
                                     </p>
                                     <a 
