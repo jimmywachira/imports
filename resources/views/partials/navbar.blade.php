@@ -1,5 +1,5 @@
 <!-- Main Navigation -->
-<nav class="sticky top-0 z-100 w-full bg-white/95 dark:bg-blue-950/95 backdrop-blur-xl shadow-lg p-2">
+<nav class="sticky top-0 z-100 w-full bg-linear-to-br from-slate-100 via-white to-slate-100  dark:from-blue-950 dark:via-blue-900 dark:to-blue-800 backdrop-blur-xl shadow-lg p-2">
 <!-- Top Contact Bar -->
 <div class="w-full lg:w-3/4 text-green-500 mx-auto mb-2 px-3 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-end gap-2 sm:gap-6 py-2 text-xs sm:text-sm">

@@ -1,5 +1,5 @@
 <!-- Premium Footer Section -->
-<footer class="relative w-full bg-white dark:bg-blue-950 text-black dark:text-white overflow-hidden border-t border-black/10 dark:border-white/10">
+<footer class="relative w-full bg-linear-to-br from-slate-100 via-white to-slate-100  dark:from-blue-950 dark:via-blue-900 dark:to-blue-800 overflow-hidden transition-colors duration-300">
     <!-- Decorative Background Elements -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-0 right-0 w-96 h-96 bg-green-400/5 dark:bg-green-400/10 rounded-full blur-3xl opacity-30 dark:opacity-20"></div>

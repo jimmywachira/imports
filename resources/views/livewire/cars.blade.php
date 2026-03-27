@@ -1,4 +1,19 @@
-<div class="page-shell">
+<style>
+    .page-shell {
+        color: #000;
+    }
+
+    .dark .page-shell {
+        color: #fff;
+    }
+
+    .page-shell .ui-muted,
+    .page-shell [class*="text-slate-"] {
+        color: inherit !important;
+    }
+</style>
+
+<div class="page-shell text-black dark:text-white">
     <div class="w-full lg:w-3/4 mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <header class="relative overflow-hidden rounded-3xl bg-linear-to-r from-green-500 via-green-400 to-green-300 text-slate-900 shadow-2xl mb-8 sm:mb-10">
             <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,rgba(72,187,120),transparent_60%)]"></div>

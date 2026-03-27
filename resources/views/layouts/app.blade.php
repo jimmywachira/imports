@@ -67,7 +67,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
 
     <!-- Scripts & Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -78,7 +78,7 @@
 
 </head>
 
-<body class="w-full min-h-screen flex flex-col bg-linear-to-br from-slate-100 via-white to-slate-100  dark:from-blue-950 dark:via-blue-900 dark:to-blue-800 antialiased transition-colors duration-300" style="font-family: 'Google Sans Code', sans-serif;">
+<body class="w-full min-h-screen font-semibold flex flex-col bg-linear-to-br from-slate-100 via-white to-slate-100  dark:from-blue-950 dark:via-blue-900 dark:to-blue-800 antialiased transition-colors duration-300" style="font-family: 'Tilt Neon', cursive;">
     <!-- Navigation -->
     @include('partials.navbar')
 
