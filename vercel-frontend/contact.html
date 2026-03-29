@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Xplore Cars Imports</title>
+  <meta name="description" content="Contact Xplore Cars Imports for sourcing, inspection, shipping and customs support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <h2 class="brand">Xplore Cars Imports</h2>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/testimonials">Testimonials</a>
+        <a href="/privacy-policy">Privacy</a>
+        <a href="/terms-of-service">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <span class="badge">Get In Touch</span>
+    <h1>Tell us what you want to import.</h1>
+    <p class="lead">This is a Vercel-hosted contact UI. Your message is submitted to your Laravel backend endpoint.</p>
+
+    <article class="card" style="margin-top: 20px; max-width: 760px;">
+      <p id="contact-status" class="status" hidden></p>
+      <form id="contact-form" method="post" action="#">
+        <input type="hidden" name="return_to" id="return_to" value="">
+        <label>Full Name
+          <input name="name" required maxlength="255" placeholder="John Doe">
+        </label>
+        <label>Email
+          <input type="email" name="email" required maxlength="255" placeholder="john@example.com">
+        </label>
+        <label>Phone
+          <input name="phone" required maxlength="20" placeholder="+254 757 356 989">
+        </label>
+        <label>Subject
+          <select name="subject" required>
+            <option value="" selected disabled>Select a subject</option>
+            <option value="Car Inquiry">Car Inquiry</option>
+            <option value="Inspection Report">Inspection Report</option>
+            <option value="Shipping Question">Shipping Question</option>
+            <option value="General Inquiry">General Inquiry</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea name="message" required minlength="10" maxlength="5000" placeholder="Tell us more about your inquiry"></textarea>
+        </label>
+        <button class="cta" type="submit">Send Message</button>
+      </form>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Copyright <span id="year"></span> Xplore Cars Imports. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/site.js"></script>
+</body>
+</html>

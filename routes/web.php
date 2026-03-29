@@ -21,6 +21,10 @@ Route::get('/cars/{slug}', CarDetails::class)->name('car.details');
 Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact')->name('contact');
 Route::post('/contact', [ContactFormController::class, 'submit'])->name('contact.submit');
+Route::post('/contact/public-submit', [ContactFormController::class, 'submitPublic'])
+    ->withoutMiddleware([\Illuminate\Foundation\Http\Middleware\VerifyCsrfToken::class])
+    ->middleware('throttle:10,1')
+    ->name('contact.public.submit');
 Route::view('/testimonials', 'testimonials')->name('testimonials');
 Route::view('/inspection-reports', 'inspection')->name('inspection');
 Route::view('/shipping-clearing', 'shipping')->name('shipping');

@@ -10,7 +10,7 @@
             <div class="absolute -bottom-20 right-0 h-80 w-80 rounded-full bg-cyan-400/20 blur-3xl"></div>
         </div>
 
-        <div class="w-full px-3 sm:px-6 lg:px-8 pt-8 sm:pt-12 lg:pt-16 pb-2">
+        <div class="w-full lg:w-3/4 mx-auto px-3 sm:px-6 lg:px-8 pt-8 sm:pt-12 lg:pt-16 pb-2">
             <div class="glass-panel rounded-3xl p-6 sm:p-10 lg:p-14 border border-green-400/30">
                 <div class="max-w-4xl">
                     <p class="uppercase tracking-[0.28em] text-[11px] font-bold text-green-400 mb-4">Verified Client Experiences</p>
@@ -38,7 +38,7 @@
     </section>
 
     {{-- Trust Stats --}}
-    <section class="w-full px-3 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
+    <section class="w-full lg:w-3/4 mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
             <div class="glass-panel rounded-2xl p-5 sm:p-6 text-center border border-green-400/30">
                 <p class="text-3xl sm:text-4xl font-black text-green-400 mb-1">10+</p>
@@ -60,7 +60,7 @@
     </section>
 
     {{-- Video Testimonials --}}
-    <section class="w-full px-3 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
+    <section class="w-full lg:w-3/4 mx-auto px-3 sm:px-6 lg:px-8 py-10 sm:py-12 lg:py-16">
         <div class="text-center mb-8 sm:mb-10 lg:mb-12">
             <p class="uppercase tracking-[0.28em] text-[11px] font-bold text-green-400 mb-3">Video Stories</p>
             <h2 class="text-2xl sm:text-4xl lg:text-5xl font-black mb-3">Hear It Directly From Our Clients</h2>
@@ -162,7 +162,7 @@
     </section>
 
     {{-- Written Testimonials --}}
-    <section class="w-full px-3 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14">
+    <section class="w-full lg:w-3/4 mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-14">
         <div class="text-center mb-8 sm:mb-10">
             <p class="uppercase tracking-[0.28em] text-[11px] font-bold text-blue-400 mb-3">Client Reviews</p>
             <h2 class="text-2xl sm:text-4xl font-black mb-3">What Clients Appreciate Most</h2>
@@ -269,7 +269,7 @@
     </section>
 
     {{-- CTA Section --}}
-    <section class="w-full px-3 sm:px-6 lg:px-8 pt-8 sm:pt-10 lg:pt-14 pb-12 sm:pb-16 lg:pb-20">
+    <section class="w-full lg:w-3/4 mx-auto px-3 sm:px-6 lg:px-8 pt-8 sm:pt-10 lg:pt-14 pb-12 sm:pb-16 lg:pb-20">
         <div class="relative overflow-hidden rounded-3xl border border-green-400/30 bg-linear-to-r from-green-500/12 via-emerald-500/10 to-green-500/12 p-7 sm:p-10 lg:p-14 text-center">
             <div class="absolute inset-0 pointer-events-none">
                 <div class="absolute top-0 left-10 h-24 w-24 rounded-full bg-green-400/20 blur-2xl"></div>

@@ -33,4 +33,40 @@ class ContactFormController extends Controller
             return back()->with('error', 'Something went wrong. Please try again later.')->withInput();
         }
     }
+
+    public function submitPublic(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:20',
+            'subject' => 'required|string|max:255',
+            'message' => 'required|string|min:10|max:5000',
+            'return_to' => 'nullable|url|max:2048',
+        ]);
+
+        $defaultReturnTo = rtrim(config('app.frontend_url', config('app.url')), '/') . '/contact?status=sent';
+        $returnTo = $validated['return_to'] ?? $defaultReturnTo;
+
+        try {
+            Contact::create([
+                'name' => $validated['name'],
+                'email' => $validated['email'],
+                'phone' => $validated['phone'],
+                'subject' => $validated['subject'],
+                'message' => $validated['message'],
+            ]);
+
+            Mail::to('info@xplorecar.com')
+                ->send(new ContactFormMail($validated));
+
+            return redirect()->away($returnTo);
+        } catch (\Exception $e) {
+            $errorReturnTo = preg_match('/\?/', $returnTo)
+                ? $returnTo . '&status=error'
+                : $returnTo . '?status=error';
+
+            return redirect()->away($errorReturnTo);
+        }
+    }
 }
