@@ -45,8 +45,13 @@ class ContactFormController extends Controller
             'return_to' => 'nullable|url|max:2048',
         ]);
 
-        $defaultReturnTo = rtrim(config('app.frontend_url', config('app.url')), '/') . '/contact?status=sent';
-        $returnTo = $validated['return_to'] ?? $defaultReturnTo;
+        $frontendBaseUrl = rtrim((string) config('app.frontend_url', config('app.url')), '/');
+        $defaultReturnTo = $frontendBaseUrl . '/contact?status=sent';
+
+        $requestedReturnTo = $validated['return_to'] ?? null;
+        $returnTo = $this->isAllowedFrontendReturnUrl($requestedReturnTo, $frontendBaseUrl)
+            ? $requestedReturnTo
+            : $defaultReturnTo;
 
         try {
             Contact::create([
@@ -68,5 +73,26 @@ class ContactFormController extends Controller
 
             return redirect()->away($errorReturnTo);
         }
+    }
+
+    protected function isAllowedFrontendReturnUrl(?string $url, string $frontendBaseUrl): bool
+    {
+        if (! $url) {
+            return false;
+        }
+
+        $frontendParts = parse_url($frontendBaseUrl);
+        $urlParts = parse_url($url);
+
+        if (! $frontendParts || ! $urlParts) {
+            return false;
+        }
+
+        $frontendScheme = $frontendParts['scheme'] ?? null;
+        $frontendHost = $frontendParts['host'] ?? null;
+        $urlScheme = $urlParts['scheme'] ?? null;
+        $urlHost = $urlParts['host'] ?? null;
+
+        return $frontendScheme === $urlScheme && $frontendHost === $urlHost;
     }
 }
