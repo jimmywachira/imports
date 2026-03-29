@@ -381,6 +381,5 @@
             @endif
         </div>
     </div>
-
-    @include('partials.footer')
 </div>
+

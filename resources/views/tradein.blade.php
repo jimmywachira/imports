@@ -209,7 +209,6 @@
             <a href="{{ route('contact') }}" class="btn-ink btn-lg">Schedule Inspection</a>
         </div>
     </div>
-
-    @include('partials.footer')
 </div>
 @endsection
+

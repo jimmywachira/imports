@@ -97,7 +97,6 @@
             <a href="{{ route('cars') }}" class="btn-outline-green btn-sm p-2 text-xs sm:text-sm">Back to Cars Listing</a>
         </div>
     </div>
-
-    @include('partials.footer')
 </div>
 @endsection
+

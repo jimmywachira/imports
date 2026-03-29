@@ -93,7 +93,8 @@
         </main>
     </div>
 
-    <!-- Toast Notifications Placeholder -->
+    <!-- Footer -->
+<!-- Toast Notifications Placeholder -->
     <div id="toast-container" class="fixed bottom-4 right-4 z-50 pointer-events-none"></div>
 
     <!-- Icons -->
@@ -137,3 +138,4 @@
     @stack('scripts')
 </body>
 </html>
+

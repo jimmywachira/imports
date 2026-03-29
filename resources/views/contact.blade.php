@@ -299,8 +299,6 @@
             </div>
         </div>
     </div>
-
-    @include('partials.footer')
 </div>
 
 @push('scripts')
@@ -326,3 +324,4 @@
 @endpush
 
 @endsection
+

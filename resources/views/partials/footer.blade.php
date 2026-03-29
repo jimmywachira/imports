@@ -79,6 +79,18 @@
                                 <span class="group-hover:translate-x-1 transition-transform">Contact Us</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ route('importation') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
+                                <ion-icon name="chevron-forward-outline" class="text-sm opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
+                                <span class="group-hover:translate-x-1 transition-transform">Car Importation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('advisory') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
+                                <ion-icon name="chevron-forward-outline" class="text-sm opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
+                                <span class="group-hover:translate-x-1 transition-transform">Advisory</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -90,27 +102,33 @@
                     </div>
                     <ul class="space-y-3">
                         <li>
-                            <a href="{{ route('cars') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
+                            <a href="{{ route('importation') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="text-sm opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Car Importation</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('cars') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
+                            <a href="{{ route('inspection') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="text-sm opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Inspection Reports</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('cars') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
+                            <a href="{{ route('shipping') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="text-sm opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Shipping & Clearing</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('cars') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
+                            <a href="{{ route('history') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
                                 <ion-icon name="chevron-forward-outline" class="text-sm opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
                                 <span class="group-hover:translate-x-1 transition-transform">Vehicle History</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('tradein') }}" class="group flex items-center gap-2 text-black/60 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition-colors duration-300">
+                                <ion-icon name="chevron-forward-outline" class="text-sm opacity-0 group-hover:opacity-100 transition-opacity -ml-2"></ion-icon>
+                                <span class="group-hover:translate-x-1 transition-transform">Trade-In Program</span>
                             </a>
                         </li>
                     </ul>
