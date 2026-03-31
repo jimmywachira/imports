@@ -175,7 +175,7 @@
                     <div class="flex items-center gap-3">
                         <div class="h-11 w-11 rounded-full bg-linear-to-br from-green-400 to-emerald-400 text-black text-sm font-black flex items-center justify-center">DK</div>
                         <div>
-                            <h3 class="font-bold">David K***</h3>
+                            <h3 class="font-bold">James K***</h3>
                             <p class="text-xs ui-muted">Business Owner</p>
                         </div>
                     </div>
